@@ -1,0 +1,13 @@
+.item-container{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.item-container img{
+    width: 90%;
+}
+
+.talles{
+    display: inline-block;
+}

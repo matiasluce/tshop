@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tshop</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Staatliches&family=Titan+One&family=Ubuntu+Condensed&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/c5dc02393b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <link rel="stylesheet" href="./shop/shop.css">
+    <link rel="stylesheet" href="./shop/contact.css">
+</head>
+<body>
+    <header id="header"></header>
+    <main>
+        <h1 class="fs-1 text-center ct-text my-3">CONTACTO</h1>
+        <div class="contact-form mx-5">
+            <div class="mb-3">
+                <label for="txtName" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="txtName" placeholder="Nombre">
+            </div>
+            <div class="mb-3">
+                <label for="txtEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="txtEmail" placeholder="nombre@gmail.com">
+            </div>
+            <div class="mb-3">
+                <select name="select" id="txtOpt">
+                    <option value="cotizacion">Cotización</option>
+                    <option value="opinion" selected>Opinión</option>
+                    <option value="informacion">Información</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="txtMensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="txtMensaje" rows="5"></textarea>
+            </div>
+            <a href="#" class="btn btn-primary" id="send-button">Enviar</a>
+            
+        </div>
+        <div class="direccion my-5">
+            <h5 class="text-center my-3"><i class="fa-solid fa-location-dot"></i> 187 High House Rd</h5>
+            <div class="mapa">
+                <iframe class="dir-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65331790.6680574!2d-120.12187720435666!3d1.9380508761792983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89acf3913f0e3201%3A0x9f87c3952a2316d2!2sDorcas%20Thrift%20Shop!5e0!3m2!1ses!2sar!4v1657157385526!5m2!1ses!2sar" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </main>
+    <footer class="footer bg-light" id="footer"></footer>
+    <script src="./js/insert.js"></script>
+    <script src="./js/mensajes.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+:root{
+    --f1: 'Pacifico', cursive;
+    --f2: 'Staatliches', cursive;
+    --f3: 'Titan One', cursive;
+    --f4: 'Ubuntu Condensed', sans-serif;
+    --f5: 'Varela Round', sans-serif;
+}
+
+.ct-text{
+    font-family: var(--f3);
+}
+
+.dir-frame{
+    margin: 0 auto;
+}
+
+.mapa{
+    display: flex;
+    align-items: center;
+}

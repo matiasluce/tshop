@@ -24,6 +24,13 @@
     <header id="header"></header>
     <main>
         <div class="container my-5" id="app">
+            <div class="spinner-container" v-if="loading">
+                <div class="spinner-text">
+                  <h4>Cargando...</h4>
+                </div>
+                <div class="spinner-grow text-primary" role="status">
+                </div>
+            </div>
             <div class="item-container" v-for="producto in productos" v-if="producto.id == identificator">
                 <img :src="producto.imgurl" :alt="producto.nombre" class="item-img">
                 <div class="item-text">

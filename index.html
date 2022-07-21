@@ -28,6 +28,13 @@
     </div>
     <main>
         <div class="container my-3" id="app">
+          <div class="spinner-container" v-if="loading">
+            <div class="spinner-text">
+              <h4>Cargando...</h4>
+            </div>
+            <div class="spinner-grow text-primary" role="status">
+            </div>
+          </div>
             <div id="cart">
               <div class="cart-icons">
                 <i class="fa-solid fa-trash" title="Vaciar carrito" @click="cleanCart"></i>
